@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.Xcentium.Shipping.Usps</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.Xcentium.Shipping.Usps.ConfigureSitecore">
+            <summary>Defines the fulfillment ConfigureSitecore class.</summary>
+            <seealso cref="T:Sitecore.Framework.Configuration.IConfigureSitecore" />
+        </member>
+        <member name="M:Plugin.Xcentium.Shipping.Usps.ConfigureSitecore.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>The configure services.</summary>
+            <param name="services">The services.</param>
+        </member>
+        <member name="T:Plugin.Xcentium.Shipping.Usps.Constants">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Plugin.Xcentium.Shipping.Usps.Constants.Usps">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Plugin.Xcentium.Shipping.Usps.Constants.Usps.DomesticXml">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Plugin.Xcentium.Shipping.Usps.Constants.Usps.DomesticPackageXml">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Plugin.Xcentium.Shipping.Usps.Constants.Usps.InternationalXml">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Plugin.Xcentium.Shipping.Usps.Constants.Usps.ShippingServices">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Plugin.Xcentium.Shipping.Usps.UspsClientPolicy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Plugin.Xcentium.Shipping.Usps.UspsClientPolicy.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Plugin.Xcentium.Shipping.Usps.UspsClientPolicy.UserId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Plugin.Xcentium.Shipping.Usps.UspsClientPolicy.Url">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Plugin.Xcentium.Shipping.Usps.UspsClientPolicy.ShipFromZip">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Plugin.Xcentium.Shipping.Usps.UspsClientPolicy.ContainerType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Plugin.Xcentium.Shipping.Usps.UspsClientPolicy.PackageSize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Plugin.Xcentium.Shipping.Usps.UspsClientPolicy.Length">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Plugin.Xcentium.Shipping.Usps.UspsClientPolicy.Width">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Plugin.Xcentium.Shipping.Usps.UspsClientPolicy.Height">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Plugin.Xcentium.Shipping.Usps.UspsClientPolicy.Weight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Plugin.Xcentium.Shipping.Usps.UspsClientPolicy.WeightFieldName">
+            <summary>
+            Weight field name in Sitecore
+            </summary>
+        </member>
+        <member name="P:Plugin.Xcentium.Shipping.Usps.UspsClientPolicy.LengthFieldName">
+            <summary>
+            Lenght field name in Sitecore
+            </summary>
+        </member>
+        <member name="P:Plugin.Xcentium.Shipping.Usps.UspsClientPolicy.WidthFieldName">
+            <summary>
+            Width field name in Sitecore
+            </summary>
+        </member>
+        <member name="P:Plugin.Xcentium.Shipping.Usps.UspsClientPolicy.HeightFieldName">
+            <summary>
+            Height field name in Sitecore
+            </summary>
+        </member>
+        <member name="T:Plugin.Xcentium.Shipping.Usps.Pipelines.Blocks.UpdateCartFulfillmentChargeBlock">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Plugin.Xcentium.Shipping.Usps.Pipelines.Blocks.UpdateCartFulfillmentChargeBlock._getSellableItemPipeline">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Plugin.Xcentium.Shipping.Usps.Pipelines.Blocks.UpdateCartFulfillmentChargeBlock.#ctor(Sitecore.Commerce.Plugin.Catalog.IGetSellableItemPipeline)">
+            <summary>
+            
+            </summary>
+            <param name="getSellableItemPipeline"></param>
+        </member>
+        <member name="M:Plugin.Xcentium.Shipping.Usps.Pipelines.Blocks.UpdateCartFulfillmentChargeBlock.Run(Sitecore.Commerce.Plugin.Carts.Cart,Sitecore.Commerce.Core.CommercePipelineExecutionContext)">
+            <summary>
+            
+            </summary>
+            <param name="arg"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Plugin.Xcentium.Shipping.Usps.Pipelines.Blocks.UpdateCartLinesFulfillmentChargeBlock">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Plugin.Xcentium.Shipping.Usps.Pipelines.Blocks.UpdateCartLinesFulfillmentChargeBlock._getSellableItemPipeline">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Plugin.Xcentium.Shipping.Usps.Pipelines.Blocks.UpdateCartLinesFulfillmentChargeBlock.#ctor(Sitecore.Commerce.Plugin.Catalog.IGetSellableItemPipeline)">
+            <summary>
+            
+            </summary>
+            <param name="getSellableItemPipeline"></param>
+        </member>
+        <member name="M:Plugin.Xcentium.Shipping.Usps.Pipelines.Blocks.UpdateCartLinesFulfillmentChargeBlock.Run(Sitecore.Commerce.Plugin.Carts.Cart,Sitecore.Commerce.Core.CommercePipelineExecutionContext)">
+            <summary>
+            
+            </summary>
+            <param name="arg"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Plugin.Xcentium.Shipping.Usps.Usps.RequestInput">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Plugin.Xcentium.Shipping.Usps.Usps.RequestInput.Weight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Plugin.Xcentium.Shipping.Usps.Usps.RequestInput.Length">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Plugin.Xcentium.Shipping.Usps.Usps.RequestInput.Width">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Plugin.Xcentium.Shipping.Usps.Usps.RequestInput.Height">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Plugin.Xcentium.Shipping.Usps.Usps.RequestInput.PriceValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Plugin.Xcentium.Shipping.Usps.Usps.RequestInput.CountryCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Plugin.Xcentium.Shipping.Usps.Usps.RequestInput.StateCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Plugin.Xcentium.Shipping.Usps.Usps.RequestInput.City">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Plugin.Xcentium.Shipping.Usps.Usps.RequestInput.ZipPostalCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Plugin.Xcentium.Shipping.Usps.Usps.RequestInput.AddressLine1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Plugin.Xcentium.Shipping.Usps.Usps.RequestInput.AddressLine2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Plugin.Xcentium.Shipping.Usps.Usps.UspsShipping">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Plugin.Xcentium.Shipping.Usps.Usps.UspsShipping.UspsClientPolicy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Plugin.Xcentium.Shipping.Usps.Usps.UspsShipping.GetCartShippingRate(System.String,Sitecore.Commerce.Plugin.Carts.Cart,Sitecore.Commerce.Plugin.Catalog.IGetSellableItemPipeline,Sitecore.Commerce.Core.CommercePipelineExecutionContext)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <param name="cart"></param>
+            <param name="getSellableItemPipeline"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Plugin.Xcentium.Shipping.Usps.Usps.UspsShipping.GetFirstDecimalFromString(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

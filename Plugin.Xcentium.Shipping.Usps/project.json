@@ -1,0 +1,53 @@
+﻿{
+  "authors": [
+    "Xcentium"
+  ],
+  "configurations": {
+    "Release": {
+      "buildOptions": {
+        "compile": "../../build/VersionInfo.cs",
+        "xmlDoc": true,
+        "warningsAsErrors": true,
+        "optimize": true
+      }
+    },
+    "Debug": {
+      "buildOptions": {
+        "warningsAsErrors": true
+      }
+    }
+  },
+  "copyright": "Â 2017 Xcentium. All rights reserved.",
+  "dependencies": {
+    "Sitecore.Commerce.Plugin.Fulfillment": "1.0.2301",
+    "Sitecore.Commerce.Plugin.CsAgent": "1.0.2301",
+    "Sitecore.Commerce.Plugin.Management": "1.0.2301"
+  },
+  "description": "A Sample Xcentium Fulfillment Plugin.",
+  "frameworks": {
+    "net452": {
+      "frameworkAssemblies": {
+        "System.EnterpriseServices": "4.0.0.0",
+        "System.Web.Services": "4.0.0.0"
+      }
+    }
+  },
+  "packOptions": {
+    "summary": "This package contains the Payments plugin for the Sitecore Commerce Engine.",
+    "tags": [
+      "Sitecore",
+      "Commerce",
+      "Plugin",
+      "Sample",
+      "Example"
+    ],
+    "owners": [
+      "Xcentium"
+    ],
+    "releaseNotes": "release notes",
+    "iconUrl": "http://www.Xcentium.com/favicon.ico",
+    "projectUrl": "http://www.sitecore.net/",
+    "licenseUrl": "http://www.sitecore.net/platform/pricing.aspx"
+  },
+  "version": "1.0.2301"
+}
