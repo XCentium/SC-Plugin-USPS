@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>A Sample Xcentium Fulfillment Plugin.</Description>
+    <Copyright>Â 2017 Xcentium. All rights reserved.</Copyright>
+    <VersionPrefix>1.0.2301</VersionPrefix>
+    <Authors>Xcentium</Authors>
+    <TargetFramework>net462</TargetFramework>
+    <AssemblyName>Plugin.Xcentium.Shipping.Usps</AssemblyName>
+    <PackageId>Plugin.Xcentium.Shipping.Usps</PackageId>
+    <PackageTags>Sitecore;Commerce;Plugin;Sample;Example</PackageTags>
+    <PackageReleaseNotes>release notes</PackageReleaseNotes>
+    <PackageIconUrl>http://www.Xcentium.com/favicon.ico</PackageIconUrl>
+    <PackageProjectUrl>http://www.sitecore.net/</PackageProjectUrl>
+    <PackageLicenseUrl>http://www.sitecore.net/platform/pricing.aspx</PackageLicenseUrl>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(Configuration)' == 'Release' ">
+    <Compile Include="..\..\build\VersionInfo.cs" Exclude="bin\**;obj\**;**\*.xproj;packages\**" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net452' ">
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Sitecore.Commerce.Core" Version="2.0.884" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Catalog" Version="2.0.1022" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Fulfillment" Version="2.0.587" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+
+</Project>

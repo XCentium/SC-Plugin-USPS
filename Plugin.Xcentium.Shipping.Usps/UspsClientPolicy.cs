@@ -30,10 +30,6 @@ namespace Plugin.Xcentium.Shipping.Usps
             this.Height = "2";
             this.Weight = "0.2";
 
-            this.WeightFieldName = "Weight";
-            this.LengthFieldName = "Length";
-            this.WidthFieldName = "Width";
-            this.HeightFieldName = "Height";
         }
 
         /// <summary>
@@ -78,32 +74,6 @@ namespace Plugin.Xcentium.Shipping.Usps
         /// 
         /// </summary>
         public string Weight { get; set; }
-
-
-        /// <summary>
-        /// Weight field name in Sitecore
-        /// </summary>
-        public string WeightFieldName { get; set; }
-
-        /// <summary>
-        /// Lenght field name in Sitecore
-        /// </summary>
-        public string LengthFieldName { get; set; }
-
-        /// <summary>
-        /// Width field name in Sitecore
-        /// </summary>
-        public string WidthFieldName { get; set; }
-
-        /// <summary>
-        /// Height field name in Sitecore
-        /// </summary>
-        public string HeightFieldName { get; set; }
-
-
-
-
-
 
     }
 }
