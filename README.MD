@@ -26,7 +26,7 @@ How to Install
 
 3. Add it as a dependency to your Adventure works or Habitat or Custom Site plugin' project
 
-4. Create a json file name "" with the json below under the Environments folder of your Sitecore Commerce Engine Project. Add your USPS userid to the json
+4. Create a json file name "Plugin.Xcentium.Shipping.Usps.PolicySet-1.0.0.json" with the json below under the Environments folder of your Sitecore Commerce Engine Project. Add your USPS userid to the json
 
 ```
 {
@@ -38,7 +38,7 @@ How to Install
   "Policies": {
     "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
     "$values": [
-    {
+     {
         "$type": "Plugin.Xcentium.Shipping.Usps.UspsClientPolicy, Plugin.Xcentium.Shipping.Usps",
         "UserId": "XXXXXXXXX",
         "Url": "http://production.shippingapis.com/ShippingAPI.dll",
@@ -51,17 +51,11 @@ How to Install
         "Height": "2",
         "PolicyId": "UspsClientPolicy",
         "Models": {
-        "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
-        "$values": [
-        ]
+			"$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
+			"$values": [
+			]
         }
-    }        "$type": "Plugin.Sample.Payments.Braintree.BraintreeClientPolicy, Plugin.Sample.Payments.Braintree",
-    "Environment": "sandbox",
-    "MerchantId": 0,
-    "PublicKey": 0,
-    "PrivateKey": 0,
-    "ConnectTimeout": 120000
-    }
+      }
     ]
   }
 }
