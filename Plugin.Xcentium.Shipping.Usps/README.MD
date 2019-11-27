@@ -1,5 +1,5 @@
 ﻿
-Sitecore Commerce Engine USPS plugin (Sitecore Commerce 9)
+Sitecore Commerce Engine USPS plugin (Sitecore Experience Commerce 9.1)
 ======================================
 
 This plugin allows the user to integrate USPS as a Fulfillment Method for shipping. 
