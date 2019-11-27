@@ -63,6 +63,18 @@ How to Install
 
 ```
 
+Inside your corresponding json files for PlugIn.Habitat.CommerceAuthoring-1.0.0.json, PlugIn.Habitat.CommerceMinions-1.0.0.json and PlugIn.Habitat.CommerceShops-1.0.0.json
+ you will need to add the line below. I added mine after braintree entry
+
+ ```
+       {
+        "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
+        "PolicySetId": "Entity-PolicySet-UspsPolicySet"
+      },
+
+
+```
+
 5. Add the required shipper and ship from Zip code ("ShipFromZip") and default weight and dimension of a catalog product. The default values will be used when there is no dimension and weight specified in Sitecore for the product item(see notes below).
 
 6. Install the USPS Shipping Option Pkg-1.0.zip in Sitecore when installed, select USPS Delivery as your shipping option.
